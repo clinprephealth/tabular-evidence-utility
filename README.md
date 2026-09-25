@@ -4,6 +4,8 @@ Preprint sources, frozen result files, and the scripts that regenerate every tab
 
 > Ryder, M. P. *Minimum Evidence, Maximum Utility? Measuring Data-Minimization Cost and Evidence-Acquisition Value for Tabular AI Across Four Domains.* Preprint, September 2026.
 
+Public repository: https://github.com/clinprephealth/tabular-evidence-utility
+
 This package reproduces **every number in the paper** from committed JSON. It does not re-train models. A later extract may add a substrate-free re-run harness; that is not required to check the manuscript.
 
 ## Layout

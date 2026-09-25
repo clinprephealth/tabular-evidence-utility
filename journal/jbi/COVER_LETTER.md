@@ -11,7 +11,7 @@ Please consider this original research paper for *Journal of Biomedical Informat
 
 The motivating clinical task is acute utilization on synthetic records, with a pre-registered replication in miniature on the open MIMIC-IV demo. Two further public tasks (machine failure; purchase intent) and a regulatory location-precision task test whether the same measurement protocol travels. The findings that matter for informatics method are: the cost of a governed minimization step is producer- and task-dependent, including opposite signs on the same clinical ladder; a frozen probe can rank withheld evidence classes by the change revealing them actually produces, well above a pre-set usefulness bar; and in both studies a single-split result was revised by split replication, which we report as part of the method rather than replacing.
 
-A preprint will be on arXiv (cs.LG) at [arXiv:XXXX.XXXXX, fill after announcement] with a content-addressed reproducibility package and an archival DOI [Zenodo, fill]. Elsevier’s sharing policy treats that preprint as not prior publication. Nothing in the manuscript is a clinical decision rule, a privacy proof, or a claim about a commercial system.
+A preprint will be on arXiv (cs.LG) at [arXiv:XXXX.XXXXX, fill after announcement] with a content-addressed reproducibility package at https://github.com/clinprephealth/tabular-evidence-utility and an archival DOI [Zenodo, fill after the GitHub Release is archived]. Elsevier’s sharing policy treats that preprint as not prior publication. Nothing in the manuscript is a clinical decision rule, a privacy proof, or a claim about a commercial system.
 
 I am the sole author. There are no competing interests. Suggested article type: **Research Paper**.
 
