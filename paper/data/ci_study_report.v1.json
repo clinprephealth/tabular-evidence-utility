@@ -1,0 +1,384 @@
+{
+  "schema": "CIStudyReport.v1",
+  "harness_code_digest": "41eac2aa466dac41ad8d01c4fb45e591dc8323633d1ed15b80d3e23d6453eba2",
+  "design_note": "split-replicated paired deltas; model seeds fixed; grouped hash splits",
+  "domains": {
+    "healthcare": {
+      "K": 20,
+      "levels": {
+        "P0": {
+          "projection_id": "domain_a_synthea_p0",
+          "level": "P0",
+          "n_features": 96,
+          "n_rows": 1044,
+          "projection_hash": "47793c99035331456d8c21f4de850f4a93c82e87d59277522ac0314758a305c8"
+        },
+        "P1": {
+          "projection_id": "domain_a_synthea_p1",
+          "level": "P1",
+          "n_features": 83,
+          "n_rows": 1044,
+          "projection_hash": "3110a8c610c1c41eb58b9cbd587b3af5a37a4bfaf9c9b29313c560c04dd4ba02"
+        },
+        "P2": {
+          "projection_id": "domain_a_synthea_p2",
+          "level": "P2",
+          "n_features": 10,
+          "n_rows": 1044,
+          "projection_hash": "bbb323d9550da0d0e7d02be78352082cb1f599af20de6e36947be681e515020d"
+        }
+      },
+      "producers": {
+        "baseline-logistic": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.6016,
+              "sd": 0.0381
+            },
+            "P1": {
+              "mean": 0.6256,
+              "sd": 0.0323
+            },
+            "P2": {
+              "mean": 0.6036,
+              "sd": 0.0482
+            }
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 20,
+              "mean": 0.024,
+              "sd": 0.0382,
+              "ci95": [
+                0.0061,
+                0.0419
+              ],
+              "verdict": "IMPROVES"
+            },
+            "P2-P1": {
+              "n": 20,
+              "mean": -0.0221,
+              "sd": 0.0474,
+              "ci95": [
+                -0.0443,
+                0.0001
+              ],
+              "verdict": "NO_MEASURED_COST"
+            }
+          }
+        },
+        "baseline-histgb": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.6102,
+              "sd": 0.0469
+            },
+            "P1": {
+              "mean": 0.582,
+              "sd": 0.0485
+            },
+            "P2": {
+              "mean": 0.5188,
+              "sd": 0.0488
+            }
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 20,
+              "mean": -0.0282,
+              "sd": 0.0391,
+              "ci95": [
+                -0.0465,
+                -0.01
+              ],
+              "verdict": "COSTS_UTILITY"
+            },
+            "P2-P1": {
+              "n": 20,
+              "mean": -0.0631,
+              "sd": 0.0392,
+              "ci95": [
+                -0.0815,
+                -0.0448
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "tabicl-classifier": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.6501,
+              "sd": 0.0425
+            },
+            "P1": {
+              "mean": 0.655,
+              "sd": 0.0421
+            },
+            "P2": {
+              "mean": 0.5772,
+              "sd": 0.0421
+            }
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 20,
+              "mean": 0.0049,
+              "sd": 0.0311,
+              "ci95": [
+                -0.0096,
+                0.0195
+              ],
+              "verdict": "NO_MEASURED_COST"
+            },
+            "P2-P1": {
+              "n": 20,
+              "mean": -0.0778,
+              "sd": 0.0354,
+              "ci95": [
+                -0.0943,
+                -0.0612
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        }
+      }
+    },
+    "non_healthcare": {
+      "K": 10,
+      "levels": {
+        "P0": {
+          "projection_id": "domain_c_ai4i_p0",
+          "level": "P0",
+          "n_features": 9,
+          "n_rows": 10000,
+          "projection_hash": "48a2a7e0a0f32a1cfb314c13928b1a3065754b631a4057ad7ae3bb5941ec38c5"
+        },
+        "P2": {
+          "projection_id": "domain_c_ai4i_p2",
+          "level": "P2",
+          "n_features": 3,
+          "n_rows": 10000,
+          "projection_hash": "f6ef9a44fed88e9a0447d5b79f8faa38796788f4396a7e2b5133e248725135b9"
+        }
+      },
+      "producers": {
+        "baseline-logistic": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.8967,
+              "sd": 0.0154
+            },
+            "P2": {
+              "mean": 0.8551,
+              "sd": 0.0155
+            }
+          },
+          "paired_deltas": {
+            "P2-P0": {
+              "n": 10,
+              "mean": -0.0416,
+              "sd": 0.0121,
+              "ci95": [
+                -0.0502,
+                -0.0329
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "baseline-histgb": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.9754,
+              "sd": 0.006
+            },
+            "P2": {
+              "mean": 0.9329,
+              "sd": 0.0094
+            }
+          },
+          "paired_deltas": {
+            "P2-P0": {
+              "n": 10,
+              "mean": -0.0425,
+              "sd": 0.0087,
+              "ci95": [
+                -0.0488,
+                -0.0363
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "tabicl-classifier": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.9829,
+              "sd": 0.006
+            },
+            "P2": {
+              "mean": 0.9459,
+              "sd": 0.0054
+            }
+          },
+          "paired_deltas": {
+            "P2-P0": {
+              "n": 10,
+              "mean": -0.037,
+              "sd": 0.0051,
+              "ci95": [
+                -0.0407,
+                -0.0333
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        }
+      }
+    },
+    "consumer_behavior": {
+      "K": 10,
+      "levels": {
+        "P0": {
+          "projection_id": "domain_d_shoppers_p0",
+          "level": "P0",
+          "n_features": 56,
+          "n_rows": 12330,
+          "projection_hash": "d78f26382c2a7db9d6f4083c3e3f46a2ebb9b23f0e8297d237ec297b60d81adf"
+        },
+        "P1": {
+          "projection_id": "domain_d_shoppers_p1",
+          "level": "P1",
+          "n_features": 24,
+          "n_rows": 12330,
+          "projection_hash": "7daec8d3cffd440a2bb3ef3f0250fa600e44ff92038e0abfaf994cbb7a475fe8"
+        },
+        "P2": {
+          "projection_id": "domain_d_shoppers_p2",
+          "level": "P2",
+          "n_features": 5,
+          "n_rows": 12330,
+          "projection_hash": "125edf350b8d90b3373ccdb46980bd3ef06d460406724ec9058a8cf468c0c2f9"
+        }
+      },
+      "producers": {
+        "baseline-logistic": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.8926,
+              "sd": 0.0046
+            },
+            "P1": {
+              "mean": 0.8946,
+              "sd": 0.0036
+            },
+            "P2": {
+              "mean": 0.8812,
+              "sd": 0.0046
+            }
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 10,
+              "mean": 0.0021,
+              "sd": 0.0024,
+              "ci95": [
+                0.0003,
+                0.0038
+              ],
+              "verdict": "IMPROVES"
+            },
+            "P2-P1": {
+              "n": 10,
+              "mean": -0.0134,
+              "sd": 0.0037,
+              "ci95": [
+                -0.016,
+                -0.0108
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "baseline-histgb": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.9323,
+              "sd": 0.0029
+            },
+            "P1": {
+              "mean": 0.9309,
+              "sd": 0.0023
+            },
+            "P2": {
+              "mean": 0.8963,
+              "sd": 0.0024
+            }
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 10,
+              "mean": -0.0014,
+              "sd": 0.0016,
+              "ci95": [
+                -0.0025,
+                -0.0003
+              ],
+              "verdict": "COSTS_UTILITY"
+            },
+            "P2-P1": {
+              "n": 10,
+              "mean": -0.0346,
+              "sd": 0.0023,
+              "ci95": [
+                -0.0362,
+                -0.033
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "tabicl-classifier": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.9384,
+              "sd": 0.0021
+            },
+            "P1": {
+              "mean": 0.9378,
+              "sd": 0.0022
+            },
+            "P2": {
+              "mean": 0.9063,
+              "sd": 0.0035
+            }
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 10,
+              "mean": -0.0006,
+              "sd": 0.0006,
+              "ci95": [
+                -0.001,
+                -0.0001
+              ],
+              "verdict": "COSTS_UTILITY"
+            },
+            "P2-P1": {
+              "n": 10,
+              "mean": -0.0315,
+              "sd": 0.0025,
+              "ci95": [
+                -0.0333,
+                -0.0298
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        }
+      }
+    }
+  }
+}

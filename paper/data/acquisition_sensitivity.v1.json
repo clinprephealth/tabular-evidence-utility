@@ -1,0 +1,218 @@
+{
+  "schema": "AcquisitionSensitivity.v1",
+  "label": "PROTOCOL-PARAMETER SENSITIVITY \u2014 v1 SPLIT \u2014 ROBUSTNESS TABLE, NOT TUNING",
+  "probe_identity": {
+    "file": "tabicl-classifier-v2-20260212.ckpt",
+    "bytes": 110368038,
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "license": "BSD-3-Clause (code and weights; hf.co/jingang/TabICL)"
+  },
+  "harness_code_digest": "66bed6fded0e2222f1129bc153558c920a2075bcce56907e6a6122599f7165ec",
+  "domain": "healthcare",
+  "level": "P1",
+  "split_id": "domain_a.v1",
+  "seed": 42,
+  "v1_protocol": {
+    "m_donors": 8,
+    "indistinguishable_bar": 0.005,
+    "pair_rotation": "(row_index + 0) mod 10",
+    "donor_order": "sha256(\"donor:{train_idx}\") ascending, first m_donors",
+    "usefulness_bar": "included >= 30 and accuracy >= 0.60 and exact binomial p < 0.05"
+  },
+  "grid": {
+    "m_donors": [
+      4,
+      8,
+      16
+    ],
+    "donor_salt": [
+      "s1:",
+      "s2:",
+      "s3:"
+    ],
+    "indistinguishable_bar": [
+      0.002,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "rotation_offset": [
+      0,
+      5
+    ]
+  },
+  "bar_factor_note": "bar cells re-score the v1 probability outputs (bar applies post-prediction); 4-dp rounding of actual_change is inherited from the row record",
+  "cells": {
+    "m_donors": {
+      "8": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 327,
+        "ranking_accuracy": 0.8743,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8227,
+        "clears_usefulness_bar": true
+      },
+      "4": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 295,
+        "ranking_accuracy": 0.7888,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.7124,
+        "clears_usefulness_bar": true
+      },
+      "16": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 339,
+        "ranking_accuracy": 0.9064,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.847,
+        "clears_usefulness_bar": true
+      }
+    },
+    "donor_salt": {
+      "v1 (no salt)": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 327,
+        "ranking_accuracy": 0.8743,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8227,
+        "clears_usefulness_bar": true
+      },
+      "s1:": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 340,
+        "ranking_accuracy": 0.9091,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8649,
+        "clears_usefulness_bar": true
+      },
+      "s2:": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 337,
+        "ranking_accuracy": 0.9011,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8624,
+        "clears_usefulness_bar": true
+      },
+      "s3:": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 333,
+        "ranking_accuracy": 0.8904,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8497,
+        "clears_usefulness_bar": true
+      }
+    },
+    "indistinguishable_bar": {
+      "0.002": {
+        "included": 390,
+        "excluded_indistinguishable": 11,
+        "correct": 336,
+        "ranking_accuracy": 0.8615,
+        "binomial_p_vs_chance": 0.0,
+        "clears_usefulness_bar": true
+      },
+      "0.005": {
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 327,
+        "ranking_accuracy": 0.8743,
+        "binomial_p_vs_chance": 0.0,
+        "clears_usefulness_bar": true
+      },
+      "0.01": {
+        "included": 352,
+        "excluded_indistinguishable": 49,
+        "correct": 310,
+        "ranking_accuracy": 0.8807,
+        "binomial_p_vs_chance": 0.0,
+        "clears_usefulness_bar": true
+      },
+      "0.02": {
+        "included": 294,
+        "excluded_indistinguishable": 107,
+        "correct": 270,
+        "ranking_accuracy": 0.9184,
+        "binomial_p_vs_chance": 0.0,
+        "clears_usefulness_bar": true
+      }
+    },
+    "rotation_offset": {
+      "0": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 374,
+        "excluded_indistinguishable": 27,
+        "correct": 327,
+        "ranking_accuracy": 0.8743,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8227,
+        "clears_usefulness_bar": true
+      },
+      "5": {
+        "split_id": "domain_a.v1",
+        "n_train_rows": 643,
+        "n_test_rows": 401,
+        "n_classes": 5,
+        "n_pairs": 10,
+        "included": 364,
+        "excluded_indistinguishable": 37,
+        "correct": 313,
+        "ranking_accuracy": 0.8599,
+        "binomial_p_vs_chance": 0.0,
+        "spearman_pred_vs_actual": 0.8155,
+        "clears_usefulness_bar": true
+      }
+    }
+  },
+  "range_of_ranking_accuracy_across_all_cells": [
+    0.7888,
+    0.9184
+  ],
+  "v1_values_remain_reported_protocol": true
+}

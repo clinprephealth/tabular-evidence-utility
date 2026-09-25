@@ -1,0 +1,6844 @@
+{
+  "schema": "AcquisitionReport.v1",
+  "probe_identity": {
+    "file": "tabicl-classifier-v2-20260212.ckpt",
+    "bytes": 110368038,
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "license": "BSD-3-Clause (code and weights; hf.co/jingang/TabICL)"
+  },
+  "seed": 42,
+  "split_id": "domain_a.v1",
+  "harness_code_digest": "d0da9e9d47066ce3e5e0139804af4e45a94968572d91806a4f43e0f76a46b6d6",
+  "protocol": {
+    "m_donors": 8,
+    "indistinguishable_bar": 0.005,
+    "pair_rotation": "row_index mod C(5,2)"
+  },
+  "n_test_rows": 401,
+  "included": 374,
+  "excluded_indistinguishable": 27,
+  "ranking_accuracy": 0.8743,
+  "binomial_p_vs_chance": 0.0,
+  "spearman_pred_vs_actual": 0.8227,
+  "T6_usefulness": "ESTABLISHED_FOR_TESTED_TASK",
+  "interpretation_ceiling": "acquisition value under the frozen capability on this task; not causal importance; not a decision rule",
+  "rows": [
+    {
+      "pos": 0,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2625,
+        "encounters": 0.0409
+      },
+      "actual_change": {
+        "conditions": 0.2425,
+        "encounters": 0.0709
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 1,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2807,
+        "immunizations": 0.0017
+      },
+      "actual_change": {
+        "conditions": 0.2676,
+        "immunizations": 0.0009
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 2,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2271,
+        "medications": 0.0426
+      },
+      "actual_change": {
+        "conditions": 0.2226,
+        "medications": 0.0543
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 3,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2747,
+        "observations": 0.0252
+      },
+      "actual_change": {
+        "conditions": 0.2564,
+        "observations": 0.0025
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 4,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0347,
+        "immunizations": 0.0072
+      },
+      "actual_change": {
+        "encounters": 0.0284,
+        "immunizations": 0.0082
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 5,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0366,
+        "medications": 0.0328
+      },
+      "actual_change": {
+        "encounters": 0.0399,
+        "medications": 0.0027
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 6,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.032,
+        "observations": 0.0249
+      },
+      "actual_change": {
+        "encounters": 0.0292,
+        "observations": 0.0065
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 7,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0018,
+        "medications": 0.03
+      },
+      "actual_change": {
+        "immunizations": 0.0001,
+        "medications": 0.0159
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 8,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0009,
+        "observations": 0.0214
+      },
+      "actual_change": {
+        "immunizations": 0.0011,
+        "observations": 0.0091
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 9,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0256,
+        "observations": 0.0182
+      },
+      "actual_change": {
+        "medications": 0.0073,
+        "observations": 0.0041
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 10,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3043,
+        "encounters": 0.0448
+      },
+      "actual_change": {
+        "conditions": 0.3075,
+        "encounters": 0.0262
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 11,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2865,
+        "immunizations": 0.0015
+      },
+      "actual_change": {
+        "conditions": 0.2996,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 12,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2284,
+        "medications": 0.0494
+      },
+      "actual_change": {
+        "conditions": 0.2399,
+        "medications": 0.0558
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 13,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3206,
+        "observations": 0.0303
+      },
+      "actual_change": {
+        "conditions": 0.3487,
+        "observations": 0.0
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 14,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0278,
+        "immunizations": 0.0145
+      },
+      "actual_change": {
+        "encounters": 0.1067,
+        "immunizations": 0.0231
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 15,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0259,
+        "medications": 0.0367
+      },
+      "actual_change": {
+        "encounters": 0.0244,
+        "medications": 0.0217
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 16,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0231,
+        "observations": 0.0244
+      },
+      "actual_change": {
+        "encounters": 0.0242,
+        "observations": 0.0091
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 17,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0007,
+        "medications": 0.019
+      },
+      "actual_change": {
+        "immunizations": 0.0,
+        "medications": 0.0181
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 18,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0006,
+        "observations": 0.0142
+      },
+      "actual_change": {
+        "immunizations": 0.0009,
+        "observations": 0.0147
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 19,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0424,
+        "observations": 0.0208
+      },
+      "actual_change": {
+        "medications": 0.0576,
+        "observations": 0.016
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 20,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2965,
+        "encounters": 0.0457
+      },
+      "actual_change": {
+        "conditions": 0.2935,
+        "encounters": 0.0176
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 21,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3124,
+        "immunizations": 0.0026
+      },
+      "actual_change": {
+        "conditions": 0.3058,
+        "immunizations": 0.0027
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 22,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2175,
+        "medications": 0.0428
+      },
+      "actual_change": {
+        "conditions": 0.2258,
+        "medications": 0.0474
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 23,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.297,
+        "observations": 0.025
+      },
+      "actual_change": {
+        "conditions": 0.2635,
+        "observations": 0.0
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 24,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0311,
+        "immunizations": 0.0125
+      },
+      "actual_change": {
+        "encounters": 0.0895,
+        "immunizations": 0.0195
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 25,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0328,
+        "medications": 0.0279
+      },
+      "actual_change": {
+        "encounters": 0.0712,
+        "medications": 0.028
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 26,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0211,
+        "observations": 0.0249
+      },
+      "actual_change": {
+        "encounters": 0.0793,
+        "observations": 0.0046
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 27,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0021,
+        "medications": 0.0239
+      },
+      "actual_change": {
+        "immunizations": 0.001,
+        "medications": 0.0234
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 28,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0047,
+        "observations": 0.0167
+      },
+      "actual_change": {
+        "immunizations": 0.0048,
+        "observations": 0.0041
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 29,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0349,
+        "observations": 0.0202
+      },
+      "actual_change": {
+        "medications": 0.0283,
+        "observations": 0.002
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 30,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.283,
+        "encounters": 0.0527
+      },
+      "actual_change": {
+        "conditions": 0.2897,
+        "encounters": 0.0407
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 31,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.28,
+        "immunizations": 0.0033
+      },
+      "actual_change": {
+        "conditions": 0.2571,
+        "immunizations": 0.0005
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 32,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2149,
+        "medications": 0.0407
+      },
+      "actual_change": {
+        "conditions": 0.2162,
+        "medications": 0.0518
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 33,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.318,
+        "observations": 0.0265
+      },
+      "actual_change": {
+        "conditions": 0.2259,
+        "observations": 0.0
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 34,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0579,
+        "immunizations": 0.0143
+      },
+      "actual_change": {
+        "encounters": 0.1422,
+        "immunizations": 0.0213
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 35,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0487,
+        "medications": 0.0325
+      },
+      "actual_change": {
+        "encounters": 0.0311,
+        "medications": 0.0116
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 36,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0561,
+        "observations": 0.0374
+      },
+      "actual_change": {
+        "encounters": 0.061,
+        "observations": 0.0284
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 37,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0031,
+        "medications": 0.0472
+      },
+      "actual_change": {
+        "immunizations": 0.0029,
+        "medications": 0.0246
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 38,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0038,
+        "observations": 0.0374
+      },
+      "actual_change": {
+        "immunizations": 0.0021,
+        "observations": 0.0263
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 39,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.048,
+        "observations": 0.0256
+      },
+      "actual_change": {
+        "medications": 0.0181,
+        "observations": 0.0476
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 40,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2707,
+        "encounters": 0.042
+      },
+      "actual_change": {
+        "conditions": 0.1833,
+        "encounters": 0.0115
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 41,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2704,
+        "immunizations": 0.0018
+      },
+      "actual_change": {
+        "conditions": 0.1975,
+        "immunizations": 0.0008
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 42,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2086,
+        "medications": 0.032
+      },
+      "actual_change": {
+        "conditions": 0.1361,
+        "medications": 0.0268
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 43,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2895,
+        "observations": 0.0247
+      },
+      "actual_change": {
+        "conditions": 0.2076,
+        "observations": 0.0363
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 44,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0203,
+        "immunizations": 0.0073
+      },
+      "actual_change": {
+        "encounters": 0.072,
+        "immunizations": 0.0112
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 45,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0254,
+        "medications": 0.0268
+      },
+      "actual_change": {
+        "encounters": 0.0705,
+        "medications": 0.0149
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 46,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0299,
+        "observations": 0.0281
+      },
+      "actual_change": {
+        "encounters": 0.0903,
+        "observations": 0.0064
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 47,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0028,
+        "medications": 0.0212
+      },
+      "actual_change": {
+        "immunizations": 0.0026,
+        "medications": 0.0135
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 48,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0029,
+        "observations": 0.0208
+      },
+      "actual_change": {
+        "immunizations": 0.0025,
+        "observations": 0.014
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 49,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0293,
+        "observations": 0.0197
+      },
+      "actual_change": {
+        "medications": 0.003,
+        "observations": 0.0069
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 50,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.293,
+        "encounters": 0.0464
+      },
+      "actual_change": {
+        "conditions": 0.315,
+        "encounters": 0.0287
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 51,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2929,
+        "immunizations": 0.0027
+      },
+      "actual_change": {
+        "conditions": 0.3037,
+        "immunizations": 0.0003
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 52,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2309,
+        "medications": 0.0495
+      },
+      "actual_change": {
+        "conditions": 0.2268,
+        "medications": 0.0672
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 53,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2624,
+        "observations": 0.0263
+      },
+      "actual_change": {
+        "conditions": 0.2875,
+        "observations": 0.0138
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 54,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.029,
+        "immunizations": 0.0046
+      },
+      "actual_change": {
+        "encounters": 0.0129,
+        "immunizations": 0.0063
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 55,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0241,
+        "medications": 0.0237
+      },
+      "actual_change": {
+        "encounters": 0.0719,
+        "medications": 0.0296
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 56,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0227,
+        "observations": 0.0285
+      },
+      "actual_change": {
+        "encounters": 0.1771,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 57,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0009,
+        "medications": 0.0488
+      },
+      "actual_change": {
+        "immunizations": 0.0009,
+        "medications": 0.014
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 58,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0025,
+        "observations": 0.0175
+      },
+      "actual_change": {
+        "immunizations": 0.0045,
+        "observations": 0.0221
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 59,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0292,
+        "observations": 0.0152
+      },
+      "actual_change": {
+        "medications": 0.0117,
+        "observations": 0.0283
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 60,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2859,
+        "encounters": 0.0332
+      },
+      "actual_change": {
+        "conditions": 0.2816,
+        "encounters": 0.0105
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 61,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.321,
+        "immunizations": 0.003
+      },
+      "actual_change": {
+        "conditions": 0.3582,
+        "immunizations": 0.0034
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 62,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2196,
+        "medications": 0.0545
+      },
+      "actual_change": {
+        "conditions": 0.2321,
+        "medications": 0.0632
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 63,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3197,
+        "observations": 0.0273
+      },
+      "actual_change": {
+        "conditions": 0.355,
+        "observations": 0.0129
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 64,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0501,
+        "immunizations": 0.0045
+      },
+      "actual_change": {
+        "encounters": 0.0645,
+        "immunizations": 0.0068
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 65,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0145,
+        "medications": 0.0249
+      },
+      "actual_change": {
+        "encounters": 0.0179,
+        "medications": 0.0054
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 66,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.015,
+        "observations": 0.0284
+      },
+      "actual_change": {
+        "encounters": 0.0721,
+        "observations": 0.0006
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 67,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0006,
+        "medications": 0.04
+      },
+      "actual_change": {
+        "immunizations": 0.0004,
+        "medications": 0.0165
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 68,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0052,
+        "observations": 0.0324
+      },
+      "actual_change": {
+        "immunizations": 0.009,
+        "observations": 0.0332
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 69,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0182,
+        "observations": 0.0141
+      },
+      "actual_change": {
+        "medications": 0.043,
+        "observations": 0.0178
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 70,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2816,
+        "encounters": 0.0321
+      },
+      "actual_change": {
+        "conditions": 0.2953,
+        "encounters": 0.027
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 71,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.287,
+        "immunizations": 0.0016
+      },
+      "actual_change": {
+        "conditions": 0.2971,
+        "immunizations": 0.0087
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 72,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2255,
+        "medications": 0.0499
+      },
+      "actual_change": {
+        "conditions": 0.2446,
+        "medications": 0.0586
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 73,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2887,
+        "observations": 0.026
+      },
+      "actual_change": {
+        "conditions": 0.2841,
+        "observations": 0.0235
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 74,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0298,
+        "immunizations": 0.0035
+      },
+      "actual_change": {
+        "encounters": 0.0725,
+        "immunizations": 0.0115
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 75,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0344,
+        "medications": 0.0204
+      },
+      "actual_change": {
+        "encounters": 0.0879,
+        "medications": 0.0205
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 76,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.036,
+        "observations": 0.0282
+      },
+      "actual_change": {
+        "encounters": 0.127,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 77,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0009,
+        "medications": 0.021
+      },
+      "actual_change": {
+        "immunizations": 0.001,
+        "medications": 0.0127
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 78,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0023,
+        "observations": 0.022
+      },
+      "actual_change": {
+        "immunizations": 0.0072,
+        "observations": 0.0043
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 79,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0312,
+        "observations": 0.0238
+      },
+      "actual_change": {
+        "medications": 0.0169,
+        "observations": 0.0064
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 80,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.305,
+        "encounters": 0.0471
+      },
+      "actual_change": {
+        "conditions": 0.2372,
+        "encounters": 0.0283
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 81,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3303,
+        "immunizations": 0.0023
+      },
+      "actual_change": {
+        "conditions": 0.2943,
+        "immunizations": 0.0031
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 82,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2307,
+        "medications": 0.0454
+      },
+      "actual_change": {
+        "conditions": 0.2025,
+        "medications": 0.0426
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 83,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3028,
+        "observations": 0.027
+      },
+      "actual_change": {
+        "conditions": 0.2723,
+        "observations": 0.0224
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 84,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0402,
+        "immunizations": 0.0082
+      },
+      "actual_change": {
+        "encounters": 0.0156,
+        "immunizations": 0.0024
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 85,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0455,
+        "medications": 0.03
+      },
+      "actual_change": {
+        "encounters": 0.039,
+        "medications": 0.0319
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 86,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0279,
+        "observations": 0.0225
+      },
+      "actual_change": {
+        "encounters": 0.1249,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 87,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0032,
+        "medications": 0.0306
+      },
+      "actual_change": {
+        "immunizations": 0.0052,
+        "medications": 0.0285
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 88,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0065,
+        "observations": 0.0166
+      },
+      "actual_change": {
+        "immunizations": 0.0074,
+        "observations": 0.0181
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 89,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.044,
+        "observations": 0.0255
+      },
+      "actual_change": {
+        "medications": 0.0414,
+        "observations": 0.0276
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 90,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2742,
+        "encounters": 0.0502
+      },
+      "actual_change": {
+        "conditions": 0.2709,
+        "encounters": 0.0164
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 91,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.292,
+        "immunizations": 0.0033
+      },
+      "actual_change": {
+        "conditions": 0.315,
+        "immunizations": 0.0003
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 92,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2216,
+        "medications": 0.0417
+      },
+      "actual_change": {
+        "conditions": 0.2406,
+        "medications": 0.0468
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 93,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3082,
+        "observations": 0.0255
+      },
+      "actual_change": {
+        "conditions": 0.3297,
+        "observations": 0.0215
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 94,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0291,
+        "immunizations": 0.0042
+      },
+      "actual_change": {
+        "encounters": 0.0098,
+        "immunizations": 0.0054
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 95,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0329,
+        "medications": 0.029
+      },
+      "actual_change": {
+        "encounters": 0.0176,
+        "medications": 0.0241
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 96,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0166,
+        "observations": 0.0169
+      },
+      "actual_change": {
+        "encounters": 0.0042,
+        "observations": 0.0035
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 97,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0014,
+        "medications": 0.0352
+      },
+      "actual_change": {
+        "immunizations": 0.0019,
+        "medications": 0.0472
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 98,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0099,
+        "observations": 0.022
+      },
+      "actual_change": {
+        "immunizations": 0.0233,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 99,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0392,
+        "observations": 0.0222
+      },
+      "actual_change": {
+        "medications": 0.0612,
+        "observations": 0.0252
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 100,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2902,
+        "encounters": 0.0404
+      },
+      "actual_change": {
+        "conditions": 0.2651,
+        "encounters": 0.0154
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 101,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2862,
+        "immunizations": 0.0018
+      },
+      "actual_change": {
+        "conditions": 0.2641,
+        "immunizations": 0.0025
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 102,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2299,
+        "medications": 0.0508
+      },
+      "actual_change": {
+        "conditions": 0.2028,
+        "medications": 0.0197
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 103,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2841,
+        "observations": 0.0256
+      },
+      "actual_change": {
+        "conditions": 0.2466,
+        "observations": 0.0274
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 104,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0259,
+        "immunizations": 0.0035
+      },
+      "actual_change": {
+        "encounters": 0.0259,
+        "immunizations": 0.0019
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 105,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0389,
+        "medications": 0.0306
+      },
+      "actual_change": {
+        "encounters": 0.0118,
+        "medications": 0.0762
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 106,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0238,
+        "observations": 0.0221
+      },
+      "actual_change": {
+        "encounters": 0.0017,
+        "observations": 0.0153
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 107,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.003,
+        "medications": 0.0467
+      },
+      "actual_change": {
+        "immunizations": 0.0046,
+        "medications": 0.0948
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 108,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0043,
+        "observations": 0.0164
+      },
+      "actual_change": {
+        "immunizations": 0.0064,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 109,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0427,
+        "observations": 0.0198
+      },
+      "actual_change": {
+        "medications": 0.0235,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 110,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.275,
+        "encounters": 0.0419
+      },
+      "actual_change": {
+        "conditions": 0.2744,
+        "encounters": 0.0608
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 111,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3141,
+        "immunizations": 0.0034
+      },
+      "actual_change": {
+        "conditions": 0.3247,
+        "immunizations": 0.0037
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 112,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2212,
+        "medications": 0.0441
+      },
+      "actual_change": {
+        "conditions": 0.2343,
+        "medications": 0.0462
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 113,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.292,
+        "observations": 0.0271
+      },
+      "actual_change": {
+        "conditions": 0.2778,
+        "observations": 0.0118
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 114,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0249,
+        "immunizations": 0.0091
+      },
+      "actual_change": {
+        "encounters": 0.0456,
+        "immunizations": 0.0041
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 115,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0364,
+        "medications": 0.0222
+      },
+      "actual_change": {
+        "encounters": 0.0384,
+        "medications": 0.0062
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 116,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0148,
+        "observations": 0.0235
+      },
+      "actual_change": {
+        "encounters": 0.0153,
+        "observations": 0.0575
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 117,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0039,
+        "medications": 0.0394
+      },
+      "actual_change": {
+        "immunizations": 0.003,
+        "medications": 0.0407
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 118,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0026,
+        "observations": 0.0152
+      },
+      "actual_change": {
+        "immunizations": 0.0009,
+        "observations": 0.0306
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 119,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0379,
+        "observations": 0.0225
+      },
+      "actual_change": {
+        "medications": 0.0251,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 120,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2709,
+        "encounters": 0.042
+      },
+      "actual_change": {
+        "conditions": 0.2385,
+        "encounters": 0.0443
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 121,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2929,
+        "immunizations": 0.0021
+      },
+      "actual_change": {
+        "conditions": 0.3219,
+        "immunizations": 0.004
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 122,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2162,
+        "medications": 0.0454
+      },
+      "actual_change": {
+        "conditions": 0.2289,
+        "medications": 0.0475
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 123,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3018,
+        "observations": 0.0276
+      },
+      "actual_change": {
+        "conditions": 0.3359,
+        "observations": 0.0288
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 124,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0578,
+        "immunizations": 0.0074
+      },
+      "actual_change": {
+        "encounters": 0.0967,
+        "immunizations": 0.0038
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 125,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.019,
+        "medications": 0.0214
+      },
+      "actual_change": {
+        "encounters": 0.0101,
+        "medications": 0.0197
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 126,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0145,
+        "observations": 0.0289
+      },
+      "actual_change": {
+        "encounters": 0.001,
+        "observations": 0.0253
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 127,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0081,
+        "medications": 0.0825
+      },
+      "actual_change": {
+        "immunizations": 0.009,
+        "medications": 0.1094
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 128,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0085,
+        "observations": 0.0237
+      },
+      "actual_change": {
+        "immunizations": 0.0053,
+        "observations": 0.0121
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 129,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0686,
+        "observations": 0.0313
+      },
+      "actual_change": {
+        "medications": 0.0919,
+        "observations": 0.018
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 130,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2625,
+        "encounters": 0.0409
+      },
+      "actual_change": {
+        "conditions": 0.1426,
+        "encounters": 0.0545
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 131,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3188,
+        "immunizations": 0.0018
+      },
+      "actual_change": {
+        "conditions": 0.2836,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 132,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2358,
+        "medications": 0.0631
+      },
+      "actual_change": {
+        "conditions": 0.1923,
+        "medications": 0.063
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 133,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3474,
+        "observations": 0.0268
+      },
+      "actual_change": {
+        "conditions": 0.3093,
+        "observations": 0.0207
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 134,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0368,
+        "immunizations": 0.0107
+      },
+      "actual_change": {
+        "encounters": 0.0195,
+        "immunizations": 0.008
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 135,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0449,
+        "medications": 0.0414
+      },
+      "actual_change": {
+        "encounters": 0.0078,
+        "medications": 0.0314
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 136,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0338,
+        "observations": 0.0333
+      },
+      "actual_change": {
+        "encounters": 0.0212,
+        "observations": 0.0023
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 137,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0088,
+        "medications": 0.0683
+      },
+      "actual_change": {
+        "immunizations": 0.0008,
+        "medications": 0.0588
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 138,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0036,
+        "observations": 0.0355
+      },
+      "actual_change": {
+        "immunizations": 0.0003,
+        "observations": 0.0137
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 139,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.092,
+        "observations": 0.0149
+      },
+      "actual_change": {
+        "medications": 0.101,
+        "observations": 0.0039
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 140,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3086,
+        "encounters": 0.0485
+      },
+      "actual_change": {
+        "conditions": 0.2799,
+        "encounters": 0.1183
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 141,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.287,
+        "immunizations": 0.0015
+      },
+      "actual_change": {
+        "conditions": 0.2352,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 142,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2252,
+        "medications": 0.0492
+      },
+      "actual_change": {
+        "conditions": 0.171,
+        "medications": 0.0554
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 143,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3355,
+        "observations": 0.0283
+      },
+      "actual_change": {
+        "conditions": 0.432,
+        "observations": 0.0
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 144,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0258,
+        "immunizations": 0.0057
+      },
+      "actual_change": {
+        "encounters": 0.0858,
+        "immunizations": 0.0023
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 145,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0426,
+        "medications": 0.0406
+      },
+      "actual_change": {
+        "encounters": 0.0103,
+        "medications": 0.0306
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 146,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0335,
+        "observations": 0.0427
+      },
+      "actual_change": {
+        "encounters": 0.0216,
+        "observations": 0.0207
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 147,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0054,
+        "medications": 0.0276
+      },
+      "actual_change": {
+        "immunizations": 0.0042,
+        "medications": 0.0209
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 148,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.003,
+        "observations": 0.0327
+      },
+      "actual_change": {
+        "immunizations": 0.0,
+        "observations": 0.0167
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 149,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.056,
+        "observations": 0.0306
+      },
+      "actual_change": {
+        "medications": 0.0447,
+        "observations": 0.0115
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 150,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3014,
+        "encounters": 0.0462
+      },
+      "actual_change": {
+        "conditions": 0.4114,
+        "encounters": 0.0873
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 151,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3101,
+        "immunizations": 0.0028
+      },
+      "actual_change": {
+        "conditions": 0.2979,
+        "immunizations": 0.0003
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 152,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2192,
+        "medications": 0.047
+      },
+      "actual_change": {
+        "conditions": 0.2275,
+        "medications": 0.0504
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 153,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.311,
+        "observations": 0.0259
+      },
+      "actual_change": {
+        "conditions": 0.3436,
+        "observations": 0.0
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 154,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0429,
+        "immunizations": 0.0119
+      },
+      "actual_change": {
+        "encounters": 0.1325,
+        "immunizations": 0.0188
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 155,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0408,
+        "medications": 0.0308
+      },
+      "actual_change": {
+        "encounters": 0.0923,
+        "medications": 0.0361
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 156,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0372,
+        "observations": 0.0306
+      },
+      "actual_change": {
+        "encounters": 0.0911,
+        "observations": 0.0667
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 157,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0023,
+        "medications": 0.0229
+      },
+      "actual_change": {
+        "immunizations": 0.0021,
+        "medications": 0.0174
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 158,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0064,
+        "observations": 0.0233
+      },
+      "actual_change": {
+        "immunizations": 0.0057,
+        "observations": 0.0174
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 159,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0516,
+        "observations": 0.0331
+      },
+      "actual_change": {
+        "medications": 0.0533,
+        "observations": 0.0265
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 160,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2514,
+        "encounters": 0.0506
+      },
+      "actual_change": {
+        "conditions": 0.2438,
+        "encounters": 0.0594
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 161,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2841,
+        "immunizations": 0.0019
+      },
+      "actual_change": {
+        "conditions": 0.2899,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 162,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2103,
+        "medications": 0.0379
+      },
+      "actual_change": {
+        "conditions": 0.2137,
+        "medications": 0.0468
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 163,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3202,
+        "observations": 0.0275
+      },
+      "actual_change": {
+        "conditions": 0.2917,
+        "observations": 0.0
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 164,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0398,
+        "immunizations": 0.0056
+      },
+      "actual_change": {
+        "encounters": 0.1076,
+        "immunizations": 0.0041
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 165,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0381,
+        "medications": 0.0302
+      },
+      "actual_change": {
+        "encounters": 0.0851,
+        "medications": 0.0158
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 166,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0383,
+        "observations": 0.03
+      },
+      "actual_change": {
+        "encounters": 0.0572,
+        "observations": 0.0241
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 167,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0038,
+        "medications": 0.0379
+      },
+      "actual_change": {
+        "immunizations": 0.0042,
+        "medications": 0.0417
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 168,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0077,
+        "observations": 0.0269
+      },
+      "actual_change": {
+        "immunizations": 0.0076,
+        "observations": 0.0057
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 169,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0576,
+        "observations": 0.0267
+      },
+      "actual_change": {
+        "medications": 0.0696,
+        "observations": 0.0042
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 170,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3141,
+        "encounters": 0.0495
+      },
+      "actual_change": {
+        "conditions": 0.2753,
+        "encounters": 0.0376
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 171,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3336,
+        "immunizations": 0.002
+      },
+      "actual_change": {
+        "conditions": 0.3168,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 172,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2481,
+        "medications": 0.0556
+      },
+      "actual_change": {
+        "conditions": 0.2099,
+        "medications": 0.0544
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 173,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.295,
+        "observations": 0.027
+      },
+      "actual_change": {
+        "conditions": 0.2741,
+        "observations": 0.0181
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 174,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0298,
+        "immunizations": 0.0027
+      },
+      "actual_change": {
+        "encounters": 0.5147,
+        "immunizations": 0.0003
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 175,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.029,
+        "medications": 0.0238
+      },
+      "actual_change": {
+        "encounters": 0.0822,
+        "medications": 0.0415
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 176,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.035,
+        "observations": 0.0337
+      },
+      "actual_change": {
+        "encounters": 0.1769,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 177,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0042,
+        "medications": 0.029
+      },
+      "actual_change": {
+        "immunizations": 0.0077,
+        "medications": 0.0238
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 178,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0059,
+        "observations": 0.0173
+      },
+      "actual_change": {
+        "immunizations": 0.0056,
+        "observations": 0.0074
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 179,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0367,
+        "observations": 0.0201
+      },
+      "actual_change": {
+        "medications": 0.0392,
+        "observations": 0.0113
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 180,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2795,
+        "encounters": 0.039
+      },
+      "actual_change": {
+        "conditions": 0.2523,
+        "encounters": 0.0472
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 181,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3067,
+        "immunizations": 0.0021
+      },
+      "actual_change": {
+        "conditions": 0.3172,
+        "immunizations": 0.0004
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 182,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2272,
+        "medications": 0.046
+      },
+      "actual_change": {
+        "conditions": 0.2306,
+        "medications": 0.0557
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 183,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2827,
+        "observations": 0.0268
+      },
+      "actual_change": {
+        "conditions": 0.263,
+        "observations": 0.0223
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 184,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.028,
+        "immunizations": 0.0104
+      },
+      "actual_change": {
+        "encounters": 0.0728,
+        "immunizations": 0.024
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 185,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0264,
+        "medications": 0.0486
+      },
+      "actual_change": {
+        "encounters": 0.0227,
+        "medications": 0.033
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 186,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0227,
+        "observations": 0.0285
+      },
+      "actual_change": {
+        "encounters": 0.175,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 187,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0018,
+        "medications": 0.0304
+      },
+      "actual_change": {
+        "immunizations": 0.0019,
+        "medications": 0.0116
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 188,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0148,
+        "observations": 0.0167
+      },
+      "actual_change": {
+        "immunizations": 0.0336,
+        "observations": 0.0078
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 189,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0427,
+        "observations": 0.0141
+      },
+      "actual_change": {
+        "medications": 0.0439,
+        "observations": 0.0051
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 190,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2817,
+        "encounters": 0.0376
+      },
+      "actual_change": {
+        "conditions": 0.3065,
+        "encounters": 0.0248
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 191,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3235,
+        "immunizations": 0.0024
+      },
+      "actual_change": {
+        "conditions": 0.3989,
+        "immunizations": 0.0026
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 192,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2318,
+        "medications": 0.05
+      },
+      "actual_change": {
+        "conditions": 0.2771,
+        "medications": 0.0605
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 193,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2908,
+        "observations": 0.0281
+      },
+      "actual_change": {
+        "conditions": 0.2724,
+        "observations": 0.0297
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 194,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0429,
+        "immunizations": 0.0066
+      },
+      "actual_change": {
+        "encounters": 0.0758,
+        "immunizations": 0.0117
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 195,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0128,
+        "medications": 0.047
+      },
+      "actual_change": {
+        "encounters": 0.0239,
+        "medications": 0.0225
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 196,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0247,
+        "observations": 0.0304
+      },
+      "actual_change": {
+        "encounters": 0.0551,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 197,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0009,
+        "medications": 0.0409
+      },
+      "actual_change": {
+        "immunizations": 0.0005,
+        "medications": 0.0162
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 198,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0072,
+        "observations": 0.0211
+      },
+      "actual_change": {
+        "immunizations": 0.0129,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 199,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0456,
+        "observations": 0.0257
+      },
+      "actual_change": {
+        "medications": 0.0189,
+        "observations": 0.0124
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 200,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2738,
+        "encounters": 0.0517
+      },
+      "actual_change": {
+        "conditions": 0.188,
+        "encounters": 0.0215
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 201,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3394,
+        "immunizations": 0.0023
+      },
+      "actual_change": {
+        "conditions": 0.2845,
+        "immunizations": 0.002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 202,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2319,
+        "medications": 0.0463
+      },
+      "actual_change": {
+        "conditions": 0.1735,
+        "medications": 0.0425
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 203,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2832,
+        "observations": 0.0232
+      },
+      "actual_change": {
+        "conditions": 0.2604,
+        "observations": 0.0004
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 204,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0191,
+        "immunizations": 0.0034
+      },
+      "actual_change": {
+        "encounters": 0.001,
+        "immunizations": 0.0017
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 205,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0401,
+        "medications": 0.0367
+      },
+      "actual_change": {
+        "encounters": 0.033,
+        "medications": 0.0811
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 206,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0216,
+        "observations": 0.0225
+      },
+      "actual_change": {
+        "encounters": 0.0078,
+        "observations": 0.0146
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 207,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0027,
+        "medications": 0.0409
+      },
+      "actual_change": {
+        "immunizations": 0.0032,
+        "medications": 0.04
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 208,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0109,
+        "observations": 0.0098
+      },
+      "actual_change": {
+        "immunizations": 0.0134,
+        "observations": 0.0003
+      },
+      "model_pick": "immunizations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 209,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0428,
+        "observations": 0.0209
+      },
+      "actual_change": {
+        "medications": 0.0351,
+        "observations": 0.0002
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 210,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2931,
+        "encounters": 0.0368
+      },
+      "actual_change": {
+        "conditions": 0.2985,
+        "encounters": 0.0001
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 211,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3141,
+        "immunizations": 0.0018
+      },
+      "actual_change": {
+        "conditions": 0.3615,
+        "immunizations": 0.0011
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 212,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2281,
+        "medications": 0.0569
+      },
+      "actual_change": {
+        "conditions": 0.2782,
+        "medications": 0.0654
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 213,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3142,
+        "observations": 0.0278
+      },
+      "actual_change": {
+        "conditions": 0.3363,
+        "observations": 0.0092
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 214,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.042,
+        "immunizations": 0.0061
+      },
+      "actual_change": {
+        "encounters": 0.0861,
+        "immunizations": 0.0084
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 215,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0143,
+        "medications": 0.0322
+      },
+      "actual_change": {
+        "encounters": 0.0241,
+        "medications": 0.0205
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 216,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0245,
+        "observations": 0.0238
+      },
+      "actual_change": {
+        "encounters": 0.0992,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 217,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0022,
+        "medications": 0.0263
+      },
+      "actual_change": {
+        "immunizations": 0.002,
+        "medications": 0.0127
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 218,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0039,
+        "observations": 0.0178
+      },
+      "actual_change": {
+        "immunizations": 0.0109,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 219,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0361,
+        "observations": 0.0149
+      },
+      "actual_change": {
+        "medications": 0.0095,
+        "observations": 0.0052
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 220,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2547,
+        "encounters": 0.0485
+      },
+      "actual_change": {
+        "conditions": 0.2614,
+        "encounters": 0.0454
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 221,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2966,
+        "immunizations": 0.0019
+      },
+      "actual_change": {
+        "conditions": 0.3005,
+        "immunizations": 0.0013
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 222,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2286,
+        "medications": 0.054
+      },
+      "actual_change": {
+        "conditions": 0.2557,
+        "medications": 0.0624
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 223,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3111,
+        "observations": 0.0286
+      },
+      "actual_change": {
+        "conditions": 0.343,
+        "observations": 0.0016
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 224,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0431,
+        "immunizations": 0.0068
+      },
+      "actual_change": {
+        "encounters": 0.0837,
+        "immunizations": 0.0069
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 225,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0261,
+        "medications": 0.0297
+      },
+      "actual_change": {
+        "encounters": 0.0093,
+        "medications": 0.0212
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 226,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0214,
+        "observations": 0.0288
+      },
+      "actual_change": {
+        "encounters": 0.017,
+        "observations": 0.0008
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 227,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0029,
+        "medications": 0.0247
+      },
+      "actual_change": {
+        "immunizations": 0.0049,
+        "medications": 0.0206
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 228,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0042,
+        "observations": 0.024
+      },
+      "actual_change": {
+        "immunizations": 0.012,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 229,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0357,
+        "observations": 0.0187
+      },
+      "actual_change": {
+        "medications": 0.0207,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 230,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2669,
+        "encounters": 0.0413
+      },
+      "actual_change": {
+        "conditions": 0.2445,
+        "encounters": 0.0092
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 231,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3067,
+        "immunizations": 0.0024
+      },
+      "actual_change": {
+        "conditions": 0.3023,
+        "immunizations": 0.0021
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 232,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2185,
+        "medications": 0.0504
+      },
+      "actual_change": {
+        "conditions": 0.231,
+        "medications": 0.0576
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 233,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3513,
+        "observations": 0.0255
+      },
+      "actual_change": {
+        "conditions": 0.3904,
+        "observations": 0.0257
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 234,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0266,
+        "immunizations": 0.0108
+      },
+      "actual_change": {
+        "encounters": 0.0386,
+        "immunizations": 0.0047
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 235,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0291,
+        "medications": 0.0426
+      },
+      "actual_change": {
+        "encounters": 0.0074,
+        "medications": 0.0011
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 236,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0191,
+        "observations": 0.0277
+      },
+      "actual_change": {
+        "encounters": 0.0114,
+        "observations": 0.031
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 237,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0078,
+        "medications": 0.0348
+      },
+      "actual_change": {
+        "immunizations": 0.0007,
+        "medications": 0.0266
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 238,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0156,
+        "observations": 0.0207
+      },
+      "actual_change": {
+        "immunizations": 0.0379,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 239,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0415,
+        "observations": 0.0216
+      },
+      "actual_change": {
+        "medications": 0.0563,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 240,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2771,
+        "encounters": 0.0483
+      },
+      "actual_change": {
+        "conditions": 0.2829,
+        "encounters": 0.0265
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 241,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2953,
+        "immunizations": 0.002
+      },
+      "actual_change": {
+        "conditions": 0.308,
+        "immunizations": 0.0016
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 242,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.244,
+        "medications": 0.0528
+      },
+      "actual_change": {
+        "conditions": 0.249,
+        "medications": 0.0664
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 243,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3151,
+        "observations": 0.0245
+      },
+      "actual_change": {
+        "conditions": 0.3318,
+        "observations": 0.0291
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 244,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0423,
+        "immunizations": 0.0084
+      },
+      "actual_change": {
+        "encounters": 0.0121,
+        "immunizations": 0.0037
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 245,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0329,
+        "medications": 0.036
+      },
+      "actual_change": {
+        "encounters": 0.0094,
+        "medications": 0.0327
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 246,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0249,
+        "observations": 0.0229
+      },
+      "actual_change": {
+        "encounters": 0.007,
+        "observations": 0.0008
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 247,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0029,
+        "medications": 0.0365
+      },
+      "actual_change": {
+        "immunizations": 0.0027,
+        "medications": 0.0349
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 248,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0036,
+        "observations": 0.0264
+      },
+      "actual_change": {
+        "immunizations": 0.0044,
+        "observations": 0.0051
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 249,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0414,
+        "observations": 0.018
+      },
+      "actual_change": {
+        "medications": 0.0703,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 250,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2816,
+        "encounters": 0.033
+      },
+      "actual_change": {
+        "conditions": 0.2744,
+        "encounters": 0.0251
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 251,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3129,
+        "immunizations": 0.0012
+      },
+      "actual_change": {
+        "conditions": 0.3229,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 252,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2334,
+        "medications": 0.0596
+      },
+      "actual_change": {
+        "conditions": 0.2726,
+        "medications": 0.0713
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 253,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3003,
+        "observations": 0.0296
+      },
+      "actual_change": {
+        "conditions": 0.2502,
+        "observations": 0.0111
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 254,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0301,
+        "immunizations": 0.0032
+      },
+      "actual_change": {
+        "encounters": 0.0796,
+        "immunizations": 0.0013
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 255,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0124,
+        "medications": 0.0376
+      },
+      "actual_change": {
+        "encounters": 0.0254,
+        "medications": 0.0059
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 256,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0172,
+        "observations": 0.0288
+      },
+      "actual_change": {
+        "encounters": 0.025,
+        "observations": 0.0035
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 257,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0024,
+        "medications": 0.0539
+      },
+      "actual_change": {
+        "immunizations": 0.0019,
+        "medications": 0.0581
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 258,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0044,
+        "observations": 0.0121
+      },
+      "actual_change": {
+        "immunizations": 0.0082,
+        "observations": 0.0358
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 259,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0304,
+        "observations": 0.015
+      },
+      "actual_change": {
+        "medications": 0.0195,
+        "observations": 0.0078
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 260,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2776,
+        "encounters": 0.0315
+      },
+      "actual_change": {
+        "conditions": 0.279,
+        "encounters": 0.021
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 261,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2969,
+        "immunizations": 0.0021
+      },
+      "actual_change": {
+        "conditions": 0.2479,
+        "immunizations": 0.0135
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 262,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2245,
+        "medications": 0.0525
+      },
+      "actual_change": {
+        "conditions": 0.2357,
+        "medications": 0.0587
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 263,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2951,
+        "observations": 0.0286
+      },
+      "actual_change": {
+        "conditions": 0.2877,
+        "observations": 0.0125
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 264,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0315,
+        "immunizations": 0.0019
+      },
+      "actual_change": {
+        "encounters": 0.0101,
+        "immunizations": 0.0212
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 265,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0339,
+        "medications": 0.0295
+      },
+      "actual_change": {
+        "encounters": 0.0838,
+        "medications": 0.0109
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 266,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0312,
+        "observations": 0.0209
+      },
+      "actual_change": {
+        "encounters": 0.0717,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 267,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0027,
+        "medications": 0.0417
+      },
+      "actual_change": {
+        "immunizations": 0.0034,
+        "medications": 0.0478
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 268,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.001,
+        "observations": 0.0139
+      },
+      "actual_change": {
+        "immunizations": 0.0004,
+        "observations": 0.0066
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 269,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0623,
+        "observations": 0.0376
+      },
+      "actual_change": {
+        "medications": 0.0771,
+        "observations": 0.0117
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 270,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2866,
+        "encounters": 0.0456
+      },
+      "actual_change": {
+        "conditions": 0.2614,
+        "encounters": 0.0278
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 271,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3178,
+        "immunizations": 0.0023
+      },
+      "actual_change": {
+        "conditions": 0.4298,
+        "immunizations": 0.0002
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 272,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2304,
+        "medications": 0.0455
+      },
+      "actual_change": {
+        "conditions": 0.2173,
+        "medications": 0.0284
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 273,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3241,
+        "observations": 0.0267
+      },
+      "actual_change": {
+        "conditions": 0.403,
+        "observations": 0.0074
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 274,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0205,
+        "immunizations": 0.0036
+      },
+      "actual_change": {
+        "encounters": 0.0041,
+        "immunizations": 0.0011
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 275,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0375,
+        "medications": 0.047
+      },
+      "actual_change": {
+        "encounters": 0.0244,
+        "medications": 0.0776
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 276,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.026,
+        "observations": 0.0252
+      },
+      "actual_change": {
+        "encounters": 0.0753,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 277,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0018,
+        "medications": 0.0256
+      },
+      "actual_change": {
+        "immunizations": 0.0019,
+        "medications": 0.0004
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 278,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0011,
+        "observations": 0.0114
+      },
+      "actual_change": {
+        "immunizations": 0.0016,
+        "observations": 0.0205
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 279,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0289,
+        "observations": 0.0155
+      },
+      "actual_change": {
+        "medications": 0.0097,
+        "observations": 0.0249
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 280,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2684,
+        "encounters": 0.0542
+      },
+      "actual_change": {
+        "conditions": 0.2401,
+        "encounters": 0.0555
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 281,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2864,
+        "immunizations": 0.0027
+      },
+      "actual_change": {
+        "conditions": 0.2604,
+        "immunizations": 0.0001
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 282,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2062,
+        "medications": 0.0386
+      },
+      "actual_change": {
+        "conditions": 0.1979,
+        "medications": 0.0418
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 283,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3167,
+        "observations": 0.0224
+      },
+      "actual_change": {
+        "conditions": 0.3002,
+        "observations": 0.0307
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 284,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0604,
+        "immunizations": 0.0157
+      },
+      "actual_change": {
+        "encounters": 0.2468,
+        "immunizations": 0.0276
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 285,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0755,
+        "medications": 0.0359
+      },
+      "actual_change": {
+        "encounters": 0.3344,
+        "medications": 0.0083
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 286,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0379,
+        "observations": 0.0386
+      },
+      "actual_change": {
+        "encounters": 0.3533,
+        "observations": 0.0976
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 287,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0037,
+        "medications": 0.0295
+      },
+      "actual_change": {
+        "immunizations": 0.0047,
+        "medications": 0.0262
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 288,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0014,
+        "observations": 0.0269
+      },
+      "actual_change": {
+        "immunizations": 0.001,
+        "observations": 0.0075
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 289,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0253,
+        "observations": 0.0277
+      },
+      "actual_change": {
+        "medications": 0.0237,
+        "observations": 0.0057
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 290,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2876,
+        "encounters": 0.0437
+      },
+      "actual_change": {
+        "conditions": 0.1756,
+        "encounters": 0.0028
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 291,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2906,
+        "immunizations": 0.0025
+      },
+      "actual_change": {
+        "conditions": 0.1799,
+        "immunizations": 0.0001
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 292,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2242,
+        "medications": 0.0473
+      },
+      "actual_change": {
+        "conditions": 0.1063,
+        "medications": 0.0354
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 293,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2846,
+        "observations": 0.0242
+      },
+      "actual_change": {
+        "conditions": 0.1585,
+        "observations": 0.0055
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 294,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0528,
+        "immunizations": 0.0059
+      },
+      "actual_change": {
+        "encounters": 0.0022,
+        "immunizations": 0.0123
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 295,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.041,
+        "medications": 0.0213
+      },
+      "actual_change": {
+        "encounters": 0.0918,
+        "medications": 0.0211
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 296,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0419,
+        "observations": 0.027
+      },
+      "actual_change": {
+        "encounters": 0.0908,
+        "observations": 0.0
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 297,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0019,
+        "medications": 0.0318
+      },
+      "actual_change": {
+        "immunizations": 0.0027,
+        "medications": 0.0285
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 298,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0007,
+        "observations": 0.0261
+      },
+      "actual_change": {
+        "immunizations": 0.0,
+        "observations": 0.0111
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 299,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0205,
+        "observations": 0.0237
+      },
+      "actual_change": {
+        "medications": 0.0208,
+        "observations": 0.0056
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 300,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2702,
+        "encounters": 0.0433
+      },
+      "actual_change": {
+        "conditions": 0.2262,
+        "encounters": 0.0079
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 301,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2812,
+        "immunizations": 0.0024
+      },
+      "actual_change": {
+        "conditions": 0.2297,
+        "immunizations": 0.0001
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 302,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2075,
+        "medications": 0.0386
+      },
+      "actual_change": {
+        "conditions": 0.1648,
+        "medications": 0.0227
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 303,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2814,
+        "observations": 0.0233
+      },
+      "actual_change": {
+        "conditions": 0.2216,
+        "observations": 0.0192
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 304,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.036,
+        "immunizations": 0.0061
+      },
+      "actual_change": {
+        "encounters": 0.0601,
+        "immunizations": 0.0094
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 305,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0372,
+        "medications": 0.022
+      },
+      "actual_change": {
+        "encounters": 0.0029,
+        "medications": 0.0264
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 306,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0237,
+        "observations": 0.0254
+      },
+      "actual_change": {
+        "encounters": 0.0282,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 307,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0014,
+        "medications": 0.0222
+      },
+      "actual_change": {
+        "immunizations": 0.0005,
+        "medications": 0.0092
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 308,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0013,
+        "observations": 0.0166
+      },
+      "actual_change": {
+        "immunizations": 0.004,
+        "observations": 0.0202
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 309,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0156,
+        "observations": 0.0249
+      },
+      "actual_change": {
+        "medications": 0.0052,
+        "observations": 0.0093
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 310,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3114,
+        "encounters": 0.0443
+      },
+      "actual_change": {
+        "conditions": 0.3301,
+        "encounters": 0.0608
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 311,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.362,
+        "immunizations": 0.0014
+      },
+      "actual_change": {
+        "conditions": 0.3868,
+        "immunizations": 0.0012
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 312,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2401,
+        "medications": 0.0765
+      },
+      "actual_change": {
+        "conditions": 0.3217,
+        "medications": 0.0875
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 313,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3178,
+        "observations": 0.0272
+      },
+      "actual_change": {
+        "conditions": 0.3451,
+        "observations": 0.0266
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 314,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0168,
+        "immunizations": 0.0026
+      },
+      "actual_change": {
+        "encounters": 0.0384,
+        "immunizations": 0.0018
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 315,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0199,
+        "medications": 0.0361
+      },
+      "actual_change": {
+        "encounters": 0.0588,
+        "medications": 0.0401
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 316,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0142,
+        "observations": 0.0164
+      },
+      "actual_change": {
+        "encounters": 0.0442,
+        "observations": 0.0016
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 317,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0027,
+        "medications": 0.0402
+      },
+      "actual_change": {
+        "immunizations": 0.0051,
+        "medications": 0.0316
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 318,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0064,
+        "observations": 0.033
+      },
+      "actual_change": {
+        "immunizations": 0.0058,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 319,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.063,
+        "observations": 0.0269
+      },
+      "actual_change": {
+        "medications": 0.0638,
+        "observations": 0.0146
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 320,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2978,
+        "encounters": 0.0505
+      },
+      "actual_change": {
+        "conditions": 0.2612,
+        "encounters": 0.0501
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 321,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.219,
+        "immunizations": 0.0019
+      },
+      "actual_change": {
+        "conditions": 0.1163,
+        "immunizations": 0.0024
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 322,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.204,
+        "medications": 0.0678
+      },
+      "actual_change": {
+        "conditions": 0.1206,
+        "medications": 0.0304
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 323,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2727,
+        "observations": 0.0259
+      },
+      "actual_change": {
+        "conditions": 0.1945,
+        "observations": 0.0262
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 324,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0426,
+        "immunizations": 0.0026
+      },
+      "actual_change": {
+        "encounters": 0.1057,
+        "immunizations": 0.0004
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 325,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0488,
+        "medications": 0.0303
+      },
+      "actual_change": {
+        "encounters": 0.0621,
+        "medications": 0.0363
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 326,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0296,
+        "observations": 0.0307
+      },
+      "actual_change": {
+        "encounters": 0.0568,
+        "observations": 0.0225
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 327,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0057,
+        "medications": 0.0386
+      },
+      "actual_change": {
+        "immunizations": 0.0109,
+        "medications": 0.0602
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 328,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0066,
+        "observations": 0.0125
+      },
+      "actual_change": {
+        "immunizations": 0.007,
+        "observations": 0.0118
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 329,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0237,
+        "observations": 0.0136
+      },
+      "actual_change": {
+        "medications": 0.0104,
+        "observations": 0.0139
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 330,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2793,
+        "encounters": 0.031
+      },
+      "actual_change": {
+        "conditions": 0.2962,
+        "encounters": 0.0044
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 331,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2953,
+        "immunizations": 0.0019
+      },
+      "actual_change": {
+        "conditions": 0.3578,
+        "immunizations": 0.0095
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 332,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2221,
+        "medications": 0.0431
+      },
+      "actual_change": {
+        "conditions": 0.258,
+        "medications": 0.0529
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 333,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2901,
+        "observations": 0.0268
+      },
+      "actual_change": {
+        "conditions": 0.298,
+        "observations": 0.0181
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 334,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0368,
+        "immunizations": 0.0014
+      },
+      "actual_change": {
+        "encounters": 0.0193,
+        "immunizations": 0.0129
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 335,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.011,
+        "medications": 0.0217
+      },
+      "actual_change": {
+        "encounters": 0.0165,
+        "medications": 0.0091
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 336,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0105,
+        "observations": 0.0259
+      },
+      "actual_change": {
+        "encounters": 0.0224,
+        "observations": 0.0088
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 337,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0037,
+        "medications": 0.0403
+      },
+      "actual_change": {
+        "immunizations": 0.0054,
+        "medications": 0.0344
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 338,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0089,
+        "observations": 0.0432
+      },
+      "actual_change": {
+        "immunizations": 0.0164,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 339,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0399,
+        "observations": 0.0206
+      },
+      "actual_change": {
+        "medications": 0.016,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 340,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2938,
+        "encounters": 0.0436
+      },
+      "actual_change": {
+        "conditions": 0.2999,
+        "encounters": 0.036
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 341,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3341,
+        "immunizations": 0.002
+      },
+      "actual_change": {
+        "conditions": 0.3218,
+        "immunizations": 0.0012
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 342,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2263,
+        "medications": 0.0492
+      },
+      "actual_change": {
+        "conditions": 0.2171,
+        "medications": 0.0574
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 343,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2982,
+        "observations": 0.0285
+      },
+      "actual_change": {
+        "conditions": 0.2715,
+        "observations": 0.0246
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 344,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0293,
+        "immunizations": 0.0033
+      },
+      "actual_change": {
+        "encounters": 0.005,
+        "immunizations": 0.003
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 345,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0333,
+        "medications": 0.0381
+      },
+      "actual_change": {
+        "encounters": 0.0174,
+        "medications": 0.036
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 346,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0235,
+        "observations": 0.0234
+      },
+      "actual_change": {
+        "encounters": 0.0238,
+        "observations": 0.0001
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 347,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0035,
+        "medications": 0.0477
+      },
+      "actual_change": {
+        "immunizations": 0.0018,
+        "medications": 0.0535
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 348,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0095,
+        "observations": 0.0147
+      },
+      "actual_change": {
+        "immunizations": 0.0347,
+        "observations": 0.0
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 349,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0285,
+        "observations": 0.0192
+      },
+      "actual_change": {
+        "medications": 0.0436,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 350,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2767,
+        "encounters": 0.0513
+      },
+      "actual_change": {
+        "conditions": 0.2508,
+        "encounters": 0.0575
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 351,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3656,
+        "immunizations": 0.0039
+      },
+      "actual_change": {
+        "conditions": 0.3239,
+        "immunizations": 0.0031
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 352,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.248,
+        "medications": 0.0581
+      },
+      "actual_change": {
+        "conditions": 0.2714,
+        "medications": 0.0714
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 353,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2999,
+        "observations": 0.0259
+      },
+      "actual_change": {
+        "conditions": 0.3116,
+        "observations": 0.016
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 354,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0421,
+        "immunizations": 0.0123
+      },
+      "actual_change": {
+        "encounters": 0.008,
+        "immunizations": 0.0091
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 355,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0457,
+        "medications": 0.0304
+      },
+      "actual_change": {
+        "encounters": 0.0288,
+        "medications": 0.0079
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 356,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0268,
+        "observations": 0.0286
+      },
+      "actual_change": {
+        "encounters": 0.0069,
+        "observations": 0.0586
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 357,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0087,
+        "medications": 0.0242
+      },
+      "actual_change": {
+        "immunizations": 0.0013,
+        "medications": 0.0164
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 358,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0034,
+        "observations": 0.0274
+      },
+      "actual_change": {
+        "immunizations": 0.0008,
+        "observations": 0.0204
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 359,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0376,
+        "observations": 0.0235
+      },
+      "actual_change": {
+        "medications": 0.0262,
+        "observations": 0.0
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 360,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2674,
+        "encounters": 0.0398
+      },
+      "actual_change": {
+        "conditions": 0.2252,
+        "encounters": 0.0251
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 361,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3165,
+        "immunizations": 0.0018
+      },
+      "actual_change": {
+        "conditions": 0.2922,
+        "immunizations": 0.0033
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 362,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2336,
+        "medications": 0.0452
+      },
+      "actual_change": {
+        "conditions": 0.1813,
+        "medications": 0.0274
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 363,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3095,
+        "observations": 0.0246
+      },
+      "actual_change": {
+        "conditions": 0.2702,
+        "observations": 0.0236
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 364,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0383,
+        "immunizations": 0.0067
+      },
+      "actual_change": {
+        "encounters": 0.0014,
+        "immunizations": 0.0057
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 365,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.046,
+        "medications": 0.0382
+      },
+      "actual_change": {
+        "encounters": 0.0293,
+        "medications": 0.052
+      },
+      "model_pick": "encounters",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 366,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0314,
+        "observations": 0.0278
+      },
+      "actual_change": {
+        "encounters": 0.0076,
+        "observations": 0.0003
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 367,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0016,
+        "medications": 0.0335
+      },
+      "actual_change": {
+        "immunizations": 0.0017,
+        "medications": 0.0425
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 368,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0027,
+        "observations": 0.0322
+      },
+      "actual_change": {
+        "immunizations": 0.0063,
+        "observations": 0.0282
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 369,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0438,
+        "observations": 0.0212
+      },
+      "actual_change": {
+        "medications": 0.0542,
+        "observations": 0.0152
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 370,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2625,
+        "encounters": 0.0409
+      },
+      "actual_change": {
+        "conditions": 0.2476,
+        "encounters": 0.0543
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 371,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2967,
+        "immunizations": 0.0018
+      },
+      "actual_change": {
+        "conditions": 0.3099,
+        "immunizations": 0.0007
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 372,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2298,
+        "medications": 0.0527
+      },
+      "actual_change": {
+        "conditions": 0.2519,
+        "medications": 0.0517
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 373,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3205,
+        "observations": 0.0278
+      },
+      "actual_change": {
+        "conditions": 0.3235,
+        "observations": 0.0065
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 374,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0128,
+        "immunizations": 0.0075
+      },
+      "actual_change": {
+        "encounters": 0.0243,
+        "immunizations": 0.0095
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 375,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0245,
+        "medications": 0.0337
+      },
+      "actual_change": {
+        "encounters": 0.03,
+        "medications": 0.0343
+      },
+      "model_pick": "medications",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 376,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0163,
+        "observations": 0.0283
+      },
+      "actual_change": {
+        "encounters": 0.0036,
+        "observations": 0.0131
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 377,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0021,
+        "medications": 0.0925
+      },
+      "actual_change": {
+        "immunizations": 0.0015,
+        "medications": 0.1009
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 378,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0023,
+        "observations": 0.0254
+      },
+      "actual_change": {
+        "immunizations": 0.0002,
+        "observations": 0.0004
+      },
+      "model_pick": "observations",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 379,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.024,
+        "observations": 0.0263
+      },
+      "actual_change": {
+        "medications": 0.0251,
+        "observations": 0.0051
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 380,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3122,
+        "encounters": 0.0476
+      },
+      "actual_change": {
+        "conditions": 0.3183,
+        "encounters": 0.0726
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 381,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3435,
+        "immunizations": 0.002
+      },
+      "actual_change": {
+        "conditions": 0.3891,
+        "immunizations": 0.0027
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 382,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2295,
+        "medications": 0.0575
+      },
+      "actual_change": {
+        "conditions": 0.2463,
+        "medications": 0.0659
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 383,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.289,
+        "observations": 0.0303
+      },
+      "actual_change": {
+        "conditions": 0.2499,
+        "observations": 0.0054
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 384,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.04,
+        "immunizations": 0.0021
+      },
+      "actual_change": {
+        "encounters": 0.02,
+        "immunizations": 0.0019
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 385,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0141,
+        "medications": 0.0222
+      },
+      "actual_change": {
+        "encounters": 0.0197,
+        "medications": 0.0057
+      },
+      "model_pick": "medications",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 386,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0171,
+        "observations": 0.0293
+      },
+      "actual_change": {
+        "encounters": 0.0561,
+        "observations": 0.0093
+      },
+      "model_pick": "observations",
+      "verdict": "incorrect"
+    },
+    {
+      "pos": 387,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0013,
+        "medications": 0.0483
+      },
+      "actual_change": {
+        "immunizations": 0.0023,
+        "medications": 0.0561
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 388,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0053,
+        "observations": 0.0133
+      },
+      "actual_change": {
+        "immunizations": 0.0041,
+        "observations": 0.0313
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 389,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0482,
+        "observations": 0.011
+      },
+      "actual_change": {
+        "medications": 0.0561,
+        "observations": 0.0061
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 390,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2625,
+        "encounters": 0.0409
+      },
+      "actual_change": {
+        "conditions": 0.2453,
+        "encounters": 0.0239
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 391,
+      "withheld": [
+        "conditions",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3065,
+        "immunizations": 0.0012
+      },
+      "actual_change": {
+        "conditions": 0.3254,
+        "immunizations": 0.0011
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 392,
+      "withheld": [
+        "conditions",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2305,
+        "medications": 0.0369
+      },
+      "actual_change": {
+        "conditions": 0.2463,
+        "medications": 0.0695
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 393,
+      "withheld": [
+        "conditions",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.3166,
+        "observations": 0.0286
+      },
+      "actual_change": {
+        "conditions": 0.3381,
+        "observations": 0.0039
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    },
+    {
+      "pos": 394,
+      "withheld": [
+        "encounters",
+        "immunizations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0349,
+        "immunizations": 0.0094
+      },
+      "actual_change": {
+        "encounters": 0.0314,
+        "immunizations": 0.0112
+      },
+      "model_pick": "encounters",
+      "verdict": "correct"
+    },
+    {
+      "pos": 395,
+      "withheld": [
+        "encounters",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.036,
+        "medications": 0.0298
+      },
+      "actual_change": {
+        "encounters": 0.0188,
+        "medications": 0.0151
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 396,
+      "withheld": [
+        "encounters",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "encounters": 0.0246,
+        "observations": 0.0225
+      },
+      "actual_change": {
+        "encounters": 0.0151,
+        "observations": 0.019
+      },
+      "model_pick": "encounters",
+      "verdict": "indistinguishable"
+    },
+    {
+      "pos": 397,
+      "withheld": [
+        "immunizations",
+        "medications"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0073,
+        "medications": 0.0294
+      },
+      "actual_change": {
+        "immunizations": 0.0022,
+        "medications": 0.0194
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 398,
+      "withheld": [
+        "immunizations",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "immunizations": 0.0021,
+        "observations": 0.0231
+      },
+      "actual_change": {
+        "immunizations": 0.0001,
+        "observations": 0.0068
+      },
+      "model_pick": "observations",
+      "verdict": "correct"
+    },
+    {
+      "pos": 399,
+      "withheld": [
+        "medications",
+        "observations"
+      ],
+      "predicted_sensitivity": {
+        "medications": 0.0446,
+        "observations": 0.0221
+      },
+      "actual_change": {
+        "medications": 0.041,
+        "observations": 0.0028
+      },
+      "model_pick": "medications",
+      "verdict": "correct"
+    },
+    {
+      "pos": 400,
+      "withheld": [
+        "conditions",
+        "encounters"
+      ],
+      "predicted_sensitivity": {
+        "conditions": 0.2985,
+        "encounters": 0.0519
+      },
+      "actual_change": {
+        "conditions": 0.3088,
+        "encounters": 0.0397
+      },
+      "model_pick": "conditions",
+      "verdict": "correct"
+    }
+  ]
+}

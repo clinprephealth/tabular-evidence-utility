@@ -1,0 +1,12 @@
+{
+  "title": "Minimum Evidence, Maximum Utility? Measuring Data-Minimization Cost and Evidence-Acquisition Value for Tabular AI Across Four Domains",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "Preprint sources, frozen result files, and figure/table scripts. Every number in the paper is read from the committed JSON. Not a privacy proof, not a clinical decision rule.",
+  "creators": [
+    {"name": "Ryder, Michael P.", "affiliation": "Independent researcher"}
+  ],
+  "keywords": ["data minimization", "tabular foundation models", "value of information", "reproducibility"],
+  "license": "cc-by-4.0",
+  "access_right": "open"
+}

@@ -1,0 +1,139 @@
+{
+  "schema": "AcquisitionCalibration.v1",
+  "label": "DESCRIPTIVE RE-AGGREGATION OF FROZEN v1 ROWS \u2014 NO NEW MODEL RUNS \u2014 NO NEW CLAIMS",
+  "source": "acquisition_report.v1.json",
+  "n_rows": 401,
+  "per_class": {
+    "conditions": {
+      "n": 161,
+      "mean_predicted": 0.2792,
+      "mean_actual": 0.2705,
+      "mean_pred_minus_actual": 0.0086,
+      "sd_pred_minus_actual": 0.0419,
+      "median_pred_minus_actual": 0.0043,
+      "pred_over_actual_ratio": 1.032
+    },
+    "encounters": {
+      "n": 161,
+      "mean_predicted": 0.0344,
+      "mean_actual": 0.052,
+      "mean_pred_minus_actual": -0.0176,
+      "sd_pred_minus_actual": 0.0624,
+      "median_pred_minus_actual": -0.0011,
+      "pred_over_actual_ratio": 0.662
+    },
+    "immunizations": {
+      "n": 160,
+      "mean_predicted": 0.0043,
+      "mean_actual": 0.0054,
+      "mean_pred_minus_actual": -0.001,
+      "sd_pred_minus_actual": 0.0049,
+      "median_pred_minus_actual": 0.0002,
+      "pred_over_actual_ratio": 0.804
+    },
+    "medications": {
+      "n": 160,
+      "mean_predicted": 0.0397,
+      "mean_actual": 0.0374,
+      "mean_pred_minus_actual": 0.0023,
+      "sd_pred_minus_actual": 0.0158,
+      "median_pred_minus_actual": 0.0016,
+      "pred_over_actual_ratio": 1.062
+    },
+    "observations": {
+      "n": 160,
+      "mean_predicted": 0.0244,
+      "mean_actual": 0.0126,
+      "mean_pred_minus_actual": 0.0118,
+      "sd_pred_minus_actual": 0.0145,
+      "median_pred_minus_actual": 0.0149,
+      "pred_over_actual_ratio": 1.939
+    }
+  },
+  "accuracy_by_realized_gap": {
+    "[0.005,0.01)": {
+      "n": 22,
+      "accuracy": 0.7727
+    },
+    "[0.01,0.02)": {
+      "n": 58,
+      "accuracy": 0.6897
+    },
+    "[0.02,0.05)": {
+      "n": 78,
+      "accuracy": 0.7949
+    },
+    "[0.05,0.1)": {
+      "n": 44,
+      "accuracy": 0.8864
+    },
+    "[0.1,1.0)": {
+      "n": 172,
+      "accuracy": 0.9826
+    }
+  },
+  "accuracy_monotone_in_gap": false,
+  "per_pair": {
+    "conditions vs encounters": {
+      "correct": 41,
+      "incorrect": 0,
+      "indistinguishable": 0,
+      "accuracy": 1.0
+    },
+    "conditions vs immunizations": {
+      "correct": 40,
+      "incorrect": 0,
+      "indistinguishable": 0,
+      "accuracy": 1.0
+    },
+    "conditions vs medications": {
+      "correct": 40,
+      "incorrect": 0,
+      "indistinguishable": 0,
+      "accuracy": 1.0
+    },
+    "conditions vs observations": {
+      "correct": 40,
+      "incorrect": 0,
+      "indistinguishable": 0,
+      "accuracy": 1.0
+    },
+    "encounters vs immunizations": {
+      "correct": 32,
+      "incorrect": 2,
+      "indistinguishable": 6,
+      "accuracy": 0.9412
+    },
+    "encounters vs medications": {
+      "correct": 21,
+      "incorrect": 14,
+      "indistinguishable": 5,
+      "accuracy": 0.6
+    },
+    "encounters vs observations": {
+      "correct": 22,
+      "incorrect": 15,
+      "indistinguishable": 3,
+      "accuracy": 0.5946
+    },
+    "immunizations vs medications": {
+      "correct": 39,
+      "incorrect": 0,
+      "indistinguishable": 1,
+      "accuracy": 1.0
+    },
+    "immunizations vs observations": {
+      "correct": 23,
+      "incorrect": 10,
+      "indistinguishable": 7,
+      "accuracy": 0.697
+    },
+    "medications vs observations": {
+      "correct": 29,
+      "incorrect": 6,
+      "indistinguishable": 5,
+      "accuracy": 0.8286
+    }
+  },
+  "reading": "predicted sensitivity is a donor-imputation average and is expected to be smoother than any single realized change; class-level over/under-prediction is characterised here, not corrected."
+}

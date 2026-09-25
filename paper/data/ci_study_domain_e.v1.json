@@ -1,0 +1,315 @@
+{
+  "schema": "CIStudyReport.v1",
+  "label": "SPLIT-REPLICATED MINIMIZATION CIs \u2014 DOMAIN E (Cal-FF)",
+  "supersedes_for_inference": "domain_e_results.v1.json (single split domain_e.v1; cells retained as record)",
+  "probe_identity": {
+    "file": "tabicl-classifier-v2-20260212.ckpt",
+    "bytes": 110368038,
+    "sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+    "license": "BSD-3-Clause (code and weights; hf.co/jingang/TabICL)"
+  },
+  "harness_code_digest": "6eba004ad8174c870351999e8c0c95e507bf032716fa4f3099aa04233edfd270",
+  "design_note": "split-replicated paired deltas; model seeds fixed; grouped hash splits by facility",
+  "split_ids": [
+    "environmental_reg.cv00",
+    "environmental_reg.cv01",
+    "environmental_reg.cv02",
+    "environmental_reg.cv03",
+    "environmental_reg.cv04",
+    "environmental_reg.cv05",
+    "environmental_reg.cv06",
+    "environmental_reg.cv07",
+    "environmental_reg.cv08",
+    "environmental_reg.cv09"
+  ],
+  "test_fraction": 0.3,
+  "positives_per_test_fold": [
+    94,
+    71,
+    86,
+    91,
+    86,
+    71,
+    83,
+    88,
+    77,
+    86
+  ],
+  "label_construction": {
+    "rule": "no permit within 1000 m of centroid",
+    "positives": 265,
+    "base_rate": 0.1249,
+    "sensitivity": {
+      "1000m": 265,
+      "500m": 485,
+      "2000m": 113
+    },
+    "paper_reported_unpermitted": 222,
+    "note": "sensitivity radii descriptive only; not re-run through the CI study; 222 never a tuning target"
+  },
+  "domains": {
+    "environmental_reg": {
+      "K": 10,
+      "levels": {
+        "P0": {
+          "projection_id": "domain_e_calff_p0",
+          "level": "P0",
+          "n_features": 23,
+          "n_rows": 2121,
+          "projection_hash": "209ea2edc2111ed321d679a809f8ad83fec7e545cbc59cff7d9f957536d5b1da"
+        },
+        "P1": {
+          "projection_id": "domain_e_calff_p1",
+          "level": "P1",
+          "n_features": 19,
+          "n_rows": 2121,
+          "projection_hash": "fd8fd7f3c6a280321e29bda23158e32e5f19d75ca855280d1447c075ee877d1f"
+        },
+        "P2": {
+          "projection_id": "domain_e_calff_p2",
+          "level": "P2",
+          "n_features": 6,
+          "n_rows": 2121,
+          "projection_hash": "be510bde347537bc0e0c7efe181c0d8a3f09dd8aae1942d8a237f5858f82d5cd"
+        }
+      },
+      "producers": {
+        "baseline-logistic": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.7707,
+              "sd": 0.0239
+            },
+            "P1": {
+              "mean": 0.7744,
+              "sd": 0.0221
+            },
+            "P2": {
+              "mean": 0.6121,
+              "sd": 0.0473
+            }
+          },
+          "per_split_auroc": {
+            "P0": [
+              0.7572,
+              0.7993,
+              0.7697,
+              0.7872,
+              0.7847,
+              0.7624,
+              0.7311,
+              0.7359,
+              0.7966,
+              0.7829
+            ],
+            "P1": [
+              0.7629,
+              0.8083,
+              0.7703,
+              0.7856,
+              0.7862,
+              0.7678,
+              0.7335,
+              0.7511,
+              0.7971,
+              0.7812
+            ],
+            "P2": [
+              0.602,
+              0.6442,
+              0.5671,
+              0.6003,
+              0.5993,
+              0.5629,
+              0.6387,
+              0.5747,
+              0.7224,
+              0.6099
+            ]
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 10,
+              "mean": 0.0037,
+              "sd": 0.0053,
+              "ci95": [
+                -0.0001,
+                0.0075
+              ],
+              "verdict": "NO_MEASURED_COST"
+            },
+            "P2-P1": {
+              "n": 10,
+              "mean": -0.1622,
+              "sd": 0.0437,
+              "ci95": [
+                -0.1935,
+                -0.131
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "baseline-histgb": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.76,
+              "sd": 0.0205
+            },
+            "P1": {
+              "mean": 0.7447,
+              "sd": 0.0152
+            },
+            "P2": {
+              "mean": 0.6412,
+              "sd": 0.0174
+            }
+          },
+          "per_split_auroc": {
+            "P0": [
+              0.7665,
+              0.7377,
+              0.761,
+              0.7734,
+              0.7651,
+              0.7253,
+              0.7421,
+              0.7553,
+              0.7924,
+              0.7808
+            ],
+            "P1": [
+              0.7499,
+              0.7456,
+              0.7323,
+              0.7651,
+              0.7492,
+              0.7208,
+              0.7246,
+              0.7519,
+              0.7652,
+              0.7424
+            ],
+            "P2": [
+              0.6586,
+              0.6229,
+              0.6188,
+              0.6547,
+              0.6189,
+              0.646,
+              0.644,
+              0.644,
+              0.6697,
+              0.6347
+            ]
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 10,
+              "mean": -0.0153,
+              "sd": 0.0138,
+              "ci95": [
+                -0.0251,
+                -0.0054
+              ],
+              "verdict": "COSTS_UTILITY"
+            },
+            "P2-P1": {
+              "n": 10,
+              "mean": -0.1035,
+              "sd": 0.0178,
+              "ci95": [
+                -0.1162,
+                -0.0908
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        },
+        "tabicl-classifier": {
+          "auroc_by_level": {
+            "P0": {
+              "mean": 0.819,
+              "sd": 0.0106
+            },
+            "P1": {
+              "mean": 0.8027,
+              "sd": 0.0174
+            },
+            "P2": {
+              "mean": 0.6965,
+              "sd": 0.0231
+            }
+          },
+          "per_split_auroc": {
+            "P0": [
+              0.8306,
+              0.8185,
+              0.8273,
+              0.831,
+              0.8074,
+              0.8053,
+              0.816,
+              0.8037,
+              0.8279,
+              0.8227
+            ],
+            "P1": [
+              0.8112,
+              0.8262,
+              0.809,
+              0.8144,
+              0.7949,
+              0.7908,
+              0.7646,
+              0.7925,
+              0.8131,
+              0.8108
+            ],
+            "P2": [
+              0.7025,
+              0.703,
+              0.706,
+              0.6949,
+              0.6633,
+              0.666,
+              0.7169,
+              0.682,
+              0.7406,
+              0.6897
+            ]
+          },
+          "paired_deltas": {
+            "P1-P0": {
+              "n": 10,
+              "mean": -0.0163,
+              "sd": 0.0145,
+              "ci95": [
+                -0.0267,
+                -0.0059
+              ],
+              "verdict": "COSTS_UTILITY"
+            },
+            "P2-P1": {
+              "n": 10,
+              "mean": -0.1062,
+              "sd": 0.0264,
+              "ci95": [
+                -0.1251,
+                -0.0873
+              ],
+              "verdict": "COSTS_UTILITY"
+            }
+          }
+        }
+      }
+    }
+  },
+  "explicitly_not": [
+    "the 222 facilities were found",
+    "an enforcement or compliance recommendation",
+    "generalisation beyond California 2017-vintage facilities",
+    "equivalence between the 1000 m label and the paper's matcher",
+    "a formal privacy guarantee from coarsening coordinates"
+  ]
+}

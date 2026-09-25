@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Minimum Evidence, Maximum Utility? Measuring Data-Minimization Cost and Evidence-Acquisition Value for Tabular AI Across Four Domains"
+message: "If you use this package, please cite the preprint."
+type: article
+authors:
+  - family-names: Ryder
+    given-names: Michael P.
+    affiliation: Independent researcher
+    email: michaelryder.do@gmail.com
+keywords:
+  - data minimization
+  - tabular foundation models
+  - value of information
+  - reproducibility
+license: CC-BY-4.0
+date-released: "2026-09-25"

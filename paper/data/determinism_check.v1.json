@@ -1,0 +1,25 @@
+{
+  "schema": "DeterminismCheck.v1",
+  "env": {
+    "hostname": "Michaels-MacBook-Pro.local",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "python": "3.13.14",
+    "numpy": "2.5.1",
+    "sklearn": "1.9.0",
+    "torch": "2.13.0",
+    "tabicl": "?"
+  },
+  "started": "2026-09-25T08:05:50",
+  "studies": {
+    "ci_study_report": {
+      "cells": 39,
+      "mismatches": [],
+      "identical": true,
+      "harness_code_digest_frozen": "41eac2aa466dac41ad8d01c4fb45e591dc8323633d1ed15b80d3e23d6453eba2",
+      "harness_code_digest_fresh": "6799315f1d098986ea1e2c80a6416002e889314e3f35b1056884e87a07218047",
+      "seconds": 1080
+    }
+  },
+  "verdict": "REPEATED_EXECUTION_IDENTICAL"
+}
