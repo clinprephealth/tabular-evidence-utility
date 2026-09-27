@@ -13,8 +13,9 @@ This package reproduces **every number in the paper** from committed JSON. It do
 | Path | Purpose |
 |---|---|
 | `paper/main.tex` / `paper/main.pdf` | The preprint |
-| `paper/tab_*.tex` | Tables generated from `paper/data/` |
+| `paper/tab_*.tex` | Tables generated from `paper/data/` by `make_paper_tables.py` |
 | `paper/figs/` | Figures 1–6 (PDF + PNG) |
+| `paper/make_paper_tables.py` | Regenerates `tab_*.tex` from `paper/data/` |
 | `paper/make_paper_figs.py` | Regenerates figures from `paper/data/` |
 | `paper/data/` | Frozen v1/v0 result files (read-only) |
 | `CLAIMS_BOUNDARY.md` | Allowed / refused public phrasing |
@@ -29,9 +30,10 @@ cd paper
 tectonic main.tex
 ```
 
-Figures already sit in `figs/`. To regenerate them (optional; needs matplotlib):
+Figures already sit in `figs/`. To regenerate tables and figures from the frozen JSON:
 
 ```bash
+python3 make_paper_tables.py          # stdlib only
 python3 -m pip install matplotlib numpy
 python3 make_paper_figs.py
 ```

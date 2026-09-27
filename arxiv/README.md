@@ -7,7 +7,7 @@
 **Primary category.** cs.LG
 **Cross-lists.** stat.ML, cs.AI
 
-**License on arXiv.** Creative Commons Attribution (CC BY 4.0)
+**License on arXiv.** Submitter's choice. Recommended: Creative Commons Attribution (CC BY 4.0). arXiv also offers CC BY-SA, CC BY-NC-SA, CC BY-NC-ND, CC0, and its own perpetual non-exclusive license; the selected license is irrevocable. Not required by arXiv — pick it because it matches the repo.
 
 **Comments line.** 13 pages, 6 figures. Code and frozen result files: [GitHub URL]. Archival DOI: [Zenodo, after first release].
 
@@ -24,5 +24,5 @@ If endorsement is requested for cs.LG, ask a colleague who has submitted there r
 ## After announcement
 
 1. Put the arXiv id in `CITATION.cff` and in the JBI cover letter.
-2. Replace the submission with version 2 once the Zenodo DOI exists (one sentence in Reproducibility).
+2. Enable the GitHub repo in Zenodo **before** tagging `v0.1.1`. The existing `v0.1.0` release will not be archived after the fact. Put the version-specific DOI in a preprint replacement.
 3. Then submit to JBI (`../journal/jbi/`).
